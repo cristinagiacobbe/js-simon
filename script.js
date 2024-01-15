@@ -24,7 +24,11 @@ for (let i = 0; i < 5; i++) {
 	document.getElementById("numbList").innerHTML+= (PCnumb+" - ")
 }
 
+setTimeout(HideFunction, 3000)
 
+function HideFunction() {
+    document.getElementById("numbList").innerHTML= ""
+    }
 
 
 
