@@ -14,6 +14,15 @@ il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 - prompt let make user insert his numbers
 - condition (if) to control if PCarray = UserArray */
 
+let PCnumbers = []
+let USERnumbers = []
+
+for (let i = 0; i < 5; i++) {
+	var PCnumb = Math.floor(Math.random() * 100);
+	PCnumbers.push(PCnumb)
+	console.log(PCnumbers)
+	document.getElementById("numbList").innerHTML+= (PCnumb+" - ")
+}
 
 
 
