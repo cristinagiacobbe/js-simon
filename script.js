@@ -25,11 +25,25 @@ for (let i = 0; i < 5; i++) {
 }
 
 setTimeout(HideFunction, 3000)
+setTimeout(ControlFunction, 4000)
 
 function HideFunction() {
     document.getElementById("numbList").innerHTML= ""
     }
 
+function ControlFunction() {
+        for (let y = 0; y < 5; y++) {
+            const USERnumb = Number(prompt("Inserire il numero generato dal PC"))
+            if (PCnumbers.includes(USERnumb)) {
+                USERnumbers.push(USERnumb)
+                console.log(USERnumbers);
+            }
+        }
+        document.getElementById("numbList").innerHTML= (`Hai indvinato ${USERnumbers.length} numeri: ${USERnumbers}. ${USERnumbers.length === 5 ? "complimenti!" : ""}`)
+    }
+
+        
+       
 
 
 
